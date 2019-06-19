@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic-ext');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #44464f;
+}
+
+a{
+    color: #86c043;
+}
+
+.wrapper{
+    max-width:1262px;
+    margin: 0 auto; 
+}
+/*Header*/
+#header{
+    padding: 15px 0 10px;
+}
+
+#header .wrapper:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.header-logo, .header-adress, .header-contact, .header-getprice{
+    float: left;
+}
+
+.header-logo{
+    margin-right: 93px;
+}
+
+.header-adress{
+    margin-top: 25px;
+    padding-left: 30px;  
+    background: url(image/map-marker-i.png) no-repeat left top; 
+    font-style: normal; 
+    margin-right: 110px;
+    font-size: 18px;
+}
+ .header-contact{
+    margin-top: 20px; 
+    margin-right: 110px;   
+ }
+
+ .header-contact-phone, .header-contact-mail{
+     display: block;
+     text-decoration: none;
+ }
+ .header-contact-phone{
+     color: #44464f;
+     margin-bottom: 10px;
+     padding-left:30px;
+     font-size: 24px;
+     font-weight: 300;
+     position: relative;
+ }
+
+ .header-contact-phone:after{
+     content: '';
+     position: absolute;
+     top:6px;
+     left: 0;
+     width: 20px;
+     height: 19px;
+     background: url('image/phone-i.png') no-repeat center center;
+ }
+
+ .header-contact-mail{
+     font-size: 16px;
+     padding-left:30px;
+     background: url('image/mail-i.png') no-repeat left center;
+     line-height: 16px;
+ }
+
+ .header-getprice{
+     margin-top: 20px;
+     float: right;
+ }
+
+ .header-getprice-batton{
+     background: #86c043 url('image/head-button.png') no-repeat 35px center;
+     color: #fff;
+     text-align: center;
+     height: 55px;
+     line-height: 55px;
+     width: 220px;
+     border-radius: 4px;
+     display: block;
+     text-decoration: none;
+     padding-left: 30px;
+     box-sizing:border-box;
+ }
+
+ /*МЕНЮ*/
+.header-bottom .wrapper{
+    border-top:1px solid #cbcccd;
+}
+
+ .header-bottom .wrapper:after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .header-bottom-menu li a{
+     display: block;
+     float:left;
+     height: 68px;
+     line-height: 68px;
+     padding: 0 30px;
+     text-decoration: none;
+     color:#44464f;
+     text-transform: uppercase;
+ }
+
+ .header-bottom-menu li.home a{
+    background: url('image/home-i.png') no-repeat 18px center;
+    padding-left: 50px;
+ }
+
+ .header-bottom-menu li.current a{
+     background-color: #ffd307;
+     position: relative;
+     top: -1px;
+     border: 1px solid #ffd307; 
+ }
+
+ .header-bottom-menu li a:hover{
+    color: #fff;
+    background-color: #a7aab8;
+}
+
+/*main*/
+/*sleder*/
+.home-slider .slide{
+    height: 500px;
+    background: url('image/slide.png') no-repeat center center;
+    padding:  130px 0 0 260px;
+    box-sizing: border-box;
+}
+
+.home-slider .slide .slide-title {
+    color:#86c043;
+    font-size: 56px;
+    text-shadow: 1px 1px 0px rgba(68, 70, 79, 1);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 0 0 10px 0;
+}
+
+.home-slider .slide .slide-descr{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+/*HomeWork NewsBlock*/
+.home-news{
+    margin-bottom: 60px;
+}
+
+.home-news-title{
+    text-transform: uppercase;
+    color: #86c043;
+    text-align: center;
+    font-size: 48px;
+    padding: 60px 0;
+    margin: 0;
+}
+
+.home-news-container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.home-news-container-item{
+    float: left;
+    width: 403px;
+    height: 445px;
+    overflow: hidden;
+    background-color: #f5f6f8;
+    box-shadow: 1px 1px 3px 0px rgba(80, 80, 80, 0.25);
+}
+
+.home-news-container-item:nth-child(2){
+    margin: 0 26px;
+}
+
+.home-container-image{
+    height: 189px;
+}
+
+.home-news-container-title{
+    display: block;
+    text-decoration: none;
+    color:#86c043;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 30px 20px 25px;
+}
+
+.home-news-container-item-text{
+    margin: 0 30px 20px 24px;
+    font-size: 16px;
+}
+ /*footer*/
+
+ #footer{
+     width: 100%;
+     background: #689434;
+     font-size: 16px;
+ }
+
+ #footer h4, p{
+     margin: 0;     
+ }
+
+ #footer .wrapper::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .footer-col{
+     width: 240px;
+     float: left;
+     color: #fff;
+     margin-bottom: 56px;
+ }
+
+ .footer-col-title{
+    text-transform: uppercase;
+    color: #ffd307;
+    font-size: 18px;
+    padding: 57px 0 0 14px;
+}
+/*----footer about us block----*/
+.footer-col:nth-child(3) .footer-col-title{
+    padding: 57px 0 0 52px;
+}
+
+ .footer-col:first-child{
+     width: 410px;
+ }
+
+ .footer-col .footer-logo{
+     padding: 30px 0 20px 13px;     
+ }
+
+ .footer-about-us{
+     padding: 0 87px 0 13px;
+ }
+
+ /*----footer menu block----*/ 
+ .footer-menu li{
+    margin-top: 36px;
+    padding-left: 13px;
+ }
+
+ .footer-menu li a{
+     display: block;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #fff;
+ }
+
+ .footer-menu li a:hover{
+     color: #dfabab;
+ }
+
+ .footer-menu li a:active{
+    color: #b930ae;
+ }
+ /*---footer blog block---*/
+ .footer-blog li:first-child{
+     padding: 31px 0 22px 0;
+ }
+ .footer-blog li::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ .footer-blog .footer-blog-image{
+     float: left;
+     display: block;     
+ }
+
+ .footer-blog-title{
+     display: block;
+     padding-left: 103px;
+     color: #fff;
+     text-decoration: none;
+ }
+
+ time{
+     display: block;
+     padding: 6px 0 0 103px;
+     color:#111;
+ }
+ 
+ 
+
+/*----footer contact block---*/
+ .footer-col:last-child{
+      float: right;
+      margin-right: 40px;     
+ }
+
+ .footer-adress{
+     font-style: normal;
+     background: url('image/map-marker-i.png') no-repeat top left;
+     padding-left: 34px;
+     margin-top: 31px;
+ }
+
+ .footer-col a{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+ }
+
+ .footer-col .footer-phone{     
+     font-size: 24px;
+     background: url('image/phone-i.png') no-repeat top left;
+     padding-left: 34px;
+     margin-top: 23px;
+ }
+
+ .footer-col .footer-mail{
+     font-size: 16px;
+     background: url('image/mail-i.png') no-repeat top left;
+     padding-left: 34px;
+     margin-top: 23px;
+     color: #ffd307;
+ }
+
+.footer-worktime{
+     background: url('image/clock-i.png') no-repeat top left;
+     padding-left: 34px;
+     margin-top: 23px;
+}
+
+
