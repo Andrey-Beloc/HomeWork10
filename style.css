@@ -133,7 +133,7 @@ a{
 }
 
 /*main*/
-/*sleder*/
+/*slider*/
 .home-slider .slide{
     height: 500px;
     background: url('image/slide.png') no-repeat center center;
@@ -164,6 +164,7 @@ a{
 .home-news-title{
     text-transform: uppercase;
     color: #86c043;
+    text-shadow: 1px 1px 0px rgba(68, 70, 79, 0.5);
     text-align: center;
     font-size: 48px;
     padding: 60px 0;
@@ -178,15 +179,16 @@ a{
 
 .home-news-container-item{
     float: left;
-    width: 403px;
+    width: 32%;
     height: 445px;
-    overflow: hidden;
+    margin-right: 2%;
     background-color: #f5f6f8;
     box-shadow: 1px 1px 3px 0px rgba(80, 80, 80, 0.25);
+    border-radius: 3px;
 }
 
-.home-news-container-item:nth-child(2){
-    margin: 0 26px;
+.home-news-container-item:nth-child(3n){
+    margin-right: 0;
 }
 
 .home-container-image{
@@ -208,8 +210,7 @@ a{
 }
  /*footer*/
 
- #footer{
-     width: 100%;
+ #footer{     
      background: #689434;
      font-size: 16px;
  }
@@ -218,45 +219,49 @@ a{
      margin: 0;     
  }
 
+ #footer .wrapper{
+    padding: 32px 0 55px 0;
+ }
+
  #footer .wrapper::after{
      content: '';
      display: block;
      clear: both;
  }
  .footer-col{
-     width: 240px;
      float: left;
-     color: #fff;
-     margin-bottom: 56px;
+     color: #fff;     
  }
 
  .footer-col-title{
     text-transform: uppercase;
     color: #ffd307;
-    font-size: 18px;
-    padding: 57px 0 0 14px;
+    font-size: 18px;    
 }
 /*----footer about us block----*/
-.footer-col:nth-child(3) .footer-col-title{
-    padding: 57px 0 0 52px;
-}
-
- .footer-col:first-child{
-     width: 410px;
- }
+.footer-col:first-child{
+    width: 320px;
+    margin-right: 100px;
+} 
 
  .footer-col .footer-logo{
-     padding: 30px 0 20px 13px;     
+     padding-left: 5px;
+     margin-bottom: 21px;
  }
 
  .footer-about-us{
-     padding: 0 87px 0 13px;
+    padding-left: 10px;
+    font-weight: 200;
  }
 
- /*----footer menu block----*/ 
+ /*----footer menu block----*/
+ .footer-col:nth-child(2){
+     width: 180px;     
+     margin:25px 54px 0 0;
+ }
+ 
  .footer-menu li{
-    margin-top: 36px;
-    padding-left: 13px;
+      margin-top:36px; 
  }
 
  .footer-menu li a{
@@ -264,6 +269,7 @@ a{
      text-transform: uppercase;
      text-decoration: none;
      color: #fff;
+     font-weight: 300;
  }
 
  .footer-menu li a:hover{
@@ -274,9 +280,19 @@ a{
     color: #b930ae;
  }
  /*---footer blog block---*/
- .footer-blog li:first-child{
-     padding: 31px 0 22px 0;
+ .footer-col:nth-child(3){
+     margin:25px 100px 0 0;
+     width: 225px;
+     
  }
+
+ .footer-blog li:first-child{
+     margin-top: 31px;
+ }
+
+ .footer-blog li:nth-child(2){
+    margin-top: 22px;
+}
  .footer-blog li::after{
      content: '';
      display: block;
@@ -288,9 +304,10 @@ a{
  }
 
  .footer-blog-title{
-     display: block;
+     display: block;     
      padding-left: 103px;
-     color: #fff;
+     color: #fff;     
+     font-weight: 200;
      text-decoration: none;
  }
 
@@ -303,43 +320,47 @@ a{
  
 
 /*----footer contact block---*/
- .footer-col:last-child{
-      float: right;
-      margin-right: 40px;     
- }
+.footer-col:nth-child(4){
+    margin-top: 25px;
+    width: 235px;    
+}
 
- .footer-adress{
+  .footer-adress{
+     display: block;
+     font-size: 18px; 
      font-style: normal;
      background: url('image/map-marker-i.png') no-repeat top left;
      padding-left: 34px;
      margin-top: 31px;
+     font-weight: 300;
  }
 
- .footer-col a{
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
- }
-
- .footer-col .footer-phone{     
+ .footer-col .footer-phone{
+     display: block;     
      font-size: 24px;
-     background: url('image/phone-i.png') no-repeat top left;
+     background: url('image/phone-i.png') no-repeat center left;
      padding-left: 34px;
      margin-top: 23px;
+     color: #fff;
+     text-decoration: none;
+     font-weight: 400;
  }
 
  .footer-col .footer-mail{
+     display: block;
      font-size: 16px;
-     background: url('image/mail-i.png') no-repeat top left;
+     background: url('image/mail-i.png') no-repeat center left;
      padding-left: 34px;
      margin-top: 23px;
      color: #ffd307;
  }
 
 .footer-worktime{
+     font-size: 18px; 
      background: url('image/clock-i.png') no-repeat top left;
      padding-left: 34px;
      margin-top: 23px;
+     font-weight: 300;
 }
 
 
